@@ -1,38 +1,194 @@
 @font-face {
     font-family: PT Sans;
-    src: url('/Fonts/PTSans-Regular.ttf');
+    src: url('./Fonts/PTSans-Regular.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: PT Sans;
-    src: url('/Fonts/PTSans-Regular.ttf');
+    src: url('./Fonts/PTSans-Bold.ttf');
     font-weight: 700;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'PT Sans';
+        background-color: #f9f9f9;
+    }
+
+    .main {
+        max-width: 450;
+        padding: 60px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .motto h1 {
+        font-size: 36px;
+        line-height: 47px;
+        font-weight: 700;
+        font-family: PT Sans;
+        /* padding: 0 80px; */
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+    .motto {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .motto p {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+
+    .products h2 {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 20px 30px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+        margin: 0 auto 30px;
+        min-width: 250;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .product-name {
+        font-size: 24px;
+        line-height: 31px;
+        color: rgb(114, 114, 255);
+        margin-bottom: 1px;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .product-count {
+        margin: 10px 0;
+        color: #666;
+        font-style: 20px;
+        line-height: 20px;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons 
+    {
+        width: 30px;
+        width: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .buttons button {
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        color: white;
+        width: 40px;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+        background-color: #3898ec;
+        align-items: center;
+    }
+
+    .buttons button:first-child {
+        background-color: #3898ec;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .price {
+        padding: 0px 20px 20px 20px;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    
+
+.buttonon {
+   background-color: #3898ec;
+   margin: 10px;
+   border-radius: 5px;
+   font-size: medium;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   font-weight: 700;
 }
 
-.main {
-    max-width: 450;
-    padding: 60px 30px;
+.korzina {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px 2px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 350px;
+    margin: 0 auto 30px;
+    min-width: 250px;
 }
 
- .motto img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: block;
+@media (min-width: 750px) {
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
-.motto h1 {
-font-size: 36px;
-line-height: 47px;
-font-weight: 700;
-font-family: PT Sans;
+.c {
+    width: 50px;
+    height: 50px;
+}
+
+.you {
+display: flex;
+}
+
+.korzina legend {
+    font-size: 20px;
+    font-weight: 700;
 }
