@@ -44,6 +44,19 @@ $products = Product::getAllProducts();
                     </div>
                 <?php endforeach; ?>
             </section>
+            <div class="basket-block">
+                <p class="offer">ваш заказ </p>
+                <div class="cart-items"></div>
+                <p class="delevery">Доставка:800 тыс тенге</p>
+                <p class="total">Итого: <span>800 тыс тенге</span></p>
+                <form action="order.php" method="POST">
+                    <legend class="get-order">оформить заказ</legend>
+                    <input type="Hidden" name="cart" class="cart-input">
+                    <input type="Phone" name="phone" placeholder="Ваш номер телефона"
+                    class="phone-number" required>
+                    <button type="sumbit" class="get" id="order">Заказать</button>
+                </form>
+            </div>
         </main>
     </body>
 </html>
